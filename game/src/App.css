@@ -1,0 +1,40 @@
+.App {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.board {
+  position: relative;
+  width: 600px;
+  height: 600px;
+  border: 2px solid black;
+}
+
+.snake {
+  position: absolute;
+  width: 3%;
+  height: 3%;
+  border: 1px solid white;
+  background-color: black;
+  z-index: 2;
+}
+
+.food {
+  position: absolute;
+  width: 3%;
+  height: 3%;
+  border: 1px solid white;
+  background-color:red;
+  z-index: 1;
+}
+
+.game-over-board {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
