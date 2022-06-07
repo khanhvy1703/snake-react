@@ -44,7 +44,7 @@ const generateFood = (snakes: number[][]): number[] => {
 //   }
 //   if (score >= 0 || score < 8) {
 //     return 200;
-//   } 
+//   }
 //   if (score >= 8 || score < 16) {
 //     return 150;
 //   }
@@ -142,20 +142,19 @@ const Game = () => {
 
   return (
     <div>
+      <Score score={score} />
       <div className='board'>
-        {/* {isGameOver ? (
+        {isGameOver ? (
           <GameOver finalScore={score} />
         ) : (
           <>
             <Snake snakePos={snakes} />
             <Food foodPos={food} />
           </>
-        )} */}
-        <GameOver finalScore={score} />
+        )}
       </div>
-      <Score score={score} />
     </div>
   );
-}
+};
 
 export default Game;

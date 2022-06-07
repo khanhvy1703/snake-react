@@ -31,10 +31,15 @@
 }
 
 .game-over-board {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  text-align: center;
+}
+
+.game-over-font {
+  font-family: 'Press Start 2P', cursive !important;
+}
+
+.score {
+  font-family: 'Press Start 2P', cursive !important;
 }
 
 

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Box, Text } from '@chakra-ui/react';
 
 interface IScoreProps {
   score: number;
@@ -6,9 +7,9 @@ interface IScoreProps {
 
 const Score = ({ score }: IScoreProps) => {
   return (
-    <div>
-      <p>{`YOUR SCORE: ${score}`}</p>
-    </div>
+    <Box>
+      <Text fontSize='sm' className='score'>{`Score: ${score}`}</Text>
+    </Box>
   );
 };
 
