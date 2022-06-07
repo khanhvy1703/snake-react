@@ -12,7 +12,11 @@ const Snake = ({ snakePos }: ISnakeProps) => {
           left: `${pos[0]}%`,
           top: `${pos[1]}%`,
         };
-        return <div key={index} className='snake' style={style}></div>;
+        return index === snakePos.length - 1 ? (
+          <div key={index} className='snake-head' style={style}></div>
+        ) : (
+          <div key={index} className='snake' style={style}></div>
+        );
       })}
     </div>
   );

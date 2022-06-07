@@ -8,7 +8,7 @@ interface IScoreProps {
 const Score = ({ score }: IScoreProps) => {
   return (
     <Box>
-      <Text fontSize='sm' className='score'>{`Score: ${score}`}</Text>
+      <Text fontSize='sm' className='font'>{`Score: ${score}`}</Text>
     </Box>
   );
 };

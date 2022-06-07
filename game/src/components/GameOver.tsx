@@ -10,8 +10,8 @@ const GameOver = ({ finalScore }: IGameOverProps) => {
     window.location.reload();
   }
   return (
-    <div className='game-over-board game-over-font'>
-      <Heading as='h2' size='lg' noOfLines={1} className='game-over-font' marginTop={'200px'}>
+    <div className='game-over-board font'>
+      <Heading as='h2' size='lg' noOfLines={1} className='font' marginTop={'200px'}>
         Game Over!!!
       </Heading>
       <Text fontSize='md' marginTop={'20px'}>{`Your Score: ${finalScore}`}</Text>
