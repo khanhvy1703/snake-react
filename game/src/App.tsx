@@ -7,7 +7,7 @@ import Leaderboard from './components/Leaderboard';
 function App() {
   return (
     <div className='App'>
-      <Heading className='font'>SNAKE</Heading>
+      <Heading className='font' marginBottom={'10px'}>SNAKE</Heading>
       <Game />
       <Box display={'flex'} flexDirection={'row'} marginTop={'20px'}>
         <HowToPlay />

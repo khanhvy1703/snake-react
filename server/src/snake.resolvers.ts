@@ -5,12 +5,12 @@ import { SnakeInput } from './snake.types';
 @Resolver((_of) => Snake)
 export class SnakeReSolvers {
   @Query(() => [Snake], { name: 'players', description: 'Get All Players' })
-  async getAllNotes() {
+  async getAllPlayers() {
     return await SnakeModel.find();
   }
 
   @Mutation(() => Snake, { name: 'addHighScore' })
-  async createNotes(@Arg('newHighScore') { name, score }: SnakeInput): Promise<Snake> {
+  async addHighScore(@Arg('newHighScore') { name, score }: SnakeInput): Promise<Snake> {
     const newScore = (
       await SnakeModel.create({
         name,

@@ -12,3 +12,6 @@ DB_PASSWORD=<Your MongoDB password >
 DB_NAME=<Your Database name>
 PORT=<PORT e.g 9000>
 ```
+
+<img src="./game/doc/snake1.png" width="400" height="600" />
+<img src="./game/doc/snake2.gif" width="400" height="600" />

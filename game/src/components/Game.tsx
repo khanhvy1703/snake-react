@@ -31,11 +31,23 @@ const isCollided = (snakes: number[][]): boolean => {
 };
 
 const generateFood = (snakes: number[][]): number[] => {
-  let randomFood = [getRandomNumber(), getRandomNumber()];
-  while (snakes.includes(randomFood)) {
-    randomFood = [getRandomNumber(), getRandomNumber()];
+  let foodX = getRandomNumber();
+  let foodY = getRandomNumber();
+  let collision = false;
+  for (let i = 0; i < snakes.length - 1; i++) {
+    const snake = snakes[i];
+    if (snake[0] === foodX && snake[1] === foodY) {
+      collision  = true;
+      break;
+    } else {
+      continue;
+    }
   }
-  return randomFood;
+
+  if (collision) {
+    generateFood(snakes);
+  }
+  return [foodX, foodY]
 };
 
 // const changeSpeed = (score: number, speed: number):number => {
