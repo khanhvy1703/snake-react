@@ -76,7 +76,7 @@ const Game = () => {
   ]);
   const [food, setFood] = useState(generateFood(snakes));
   const [direction, setDirection] = useState(RIGHT);
-  const [speed] = useState(150);
+  const [speed] = useState(50);
   const [isGameOver, setGameOver] = useState(false);
   const [score, setScore] = useState(0);
 
